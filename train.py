@@ -3,9 +3,38 @@ import shared
 from argument_parser import parser, genreate_filters, generate_activations
 import matplotlib.pyplot as plt
 from cnn import CNN
+from configuration import Configure
+import torch
 
 TRAIN_PATH = '../inaturalist_12K/train'
 TEST_PATH = '../inaturalist_12K/val'
+
+DEVICE = 'mps' if torch.backends.mps.is_available() else 'cuda' if torch.cuda.is_available() else 'cpu'
+
+
+def train(train_dl, val_dl, test_dl, model, optim, criterion, epochs, device='cpu'):
+
+      model = model.to(device)
+
+      optimizer = optim(model.parameters())
+      loss_fn = criterion()
+      model.train()
+
+      running_loss = 0
+      acc = 0
+
+      for epoch in range(epochs):
+            for images, labels in (train_dl):
+                  images = images.to(device, non_blocking = True)
+                  labels = labels.to(device, non_blocking = True)
+                  optimizer.zero_grad()
+                  outputs = model(images)
+                  loss = loss_fn(outputs, labels)
+                  loss.backward()
+                  optimizer.step()
+
+                  running_loss += loss.item()
+            print(running_loss)
 
 
 if __name__ == '__main__':
@@ -14,25 +43,26 @@ if __name__ == '__main__':
 
       config = args.__dict__
 
-      d = Data(train_path=TRAIN_PATH, test_path=TEST_PATH, resize=(config['resize'],config['resize']), batch_size=config['batch_size'], train_test_split=0.8)
+      d = Data(train_path=TRAIN_PATH, test_path=TEST_PATH, resize=(config['resize'],config['resize']), batch_size=config['batch_size'], train_test_split=0.8, augment=config['augment'])
+
       train_dl, val_dl, test_dl = d.get_train_val_test_dataloaders()
 
       x_train, y_train = next(iter(train_dl))
+
+      print(x_train.shape, y_train.shape)
 
       x_val, y_val = next(iter(val_dl))
 
       x_test, y_test = next(iter(test_dl))
 
-
-      # d.show_sample(x_train[10], y_train[10])
-
       script = {
+            
             "input_size":x_train.shape, 
             "output_size":10, 
 
-            "filters":genreate_filters(config['filter_initial'], config['filter_automated'], config['n_convolutions']),
+            "filters":genreate_filters(config['filter_initial'], config['filter_strategy'], config['n_convolutions']) if config['filter_automated'] else config['filter_manual'],
 
-            # "filters":[8, 16, 64, 128, 256], 
+ 
             "kernel_config":config['kernel'], 
             "padding_config":config['padding'], 
             "stride_config":config['stride'], 
@@ -41,11 +71,29 @@ if __name__ == '__main__':
             "dense_activation":generate_activations(config['dense_activation'], config['n_dense']),
             "dense_config":config['dense'], 
 
-            "batch_size":config['batch_size']
+            "batch_size":config['batch_size'],
+
+            "optimizer":config['optimizer'], 
+
+            "batch_norm":config['batch_norm'],
+
+            "dropout":config['dropout']
       }
 
-      model = CNN(x_train.shape, 10, script['filters'], script['padding_config'], script['stride_config'], script['dense_config'], script['conv_activation'], script['dense_activation'], script['kernel_config'], script['batch_size'])
+
+      c = Configure()
+      model , optim, loss = c.configure(script)
       model.view_model_summary()
+      pytorch_total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+      print(f"Total number of parameters : {pytorch_total_params}")
+
+      model(x_train)
+
+      # print(model.cnn)
+
+      # train(train_dl, val_dl, test_dl, model, optim, loss, 10, DEVICE)
+
+      # model.layerwise_visualise(x_train)
 
       
-      print(model.forward(x_train).shape)
+      

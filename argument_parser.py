@@ -24,6 +24,10 @@ parser.add_argument('-r_sz', '--resize',
                   help = 'Number of epochs to train the agent')
 
 parser.add_argument('-f_a', '--filter_automated', 
+                  type = bool, default = False, 
+                  help = 'Boolean flag for indicating automatic filter design')
+
+parser.add_argument('-f_s', '--filter_strategy', 
                   type = str, default = 'doubled', 
                   help = 'Choices for filter configuration strategy : same, doubled, halved')
 
@@ -66,3 +70,28 @@ parser.add_argument('-d_a', '--dense_activation',
 parser.add_argument('-n_d', '--n_dense', 
                   type = int, default = 1,
                   help = 'Number of dense layers')
+
+parser.add_argument('-o', '--optimizer', 
+                  type = str, default = 'adam',
+                  help = 'Choices for optimizers : adam, sgd, nadam, adamw, rmsprop, adamax')
+
+parser.add_argument('-a', '--augment', 
+                  type = bool, default = False,
+                  help = 'Enable data augmentation')
+
+
+parser.add_argument('-b_n', '--batch_norm', 
+                  type = bool, default = False,
+                  help = 'Enable Batch Normalisation')
+
+parser.add_argument('-lr', '--learning_rate', 
+                  type = float, default = 0.001,
+                  help = 'Learning rate for optimizer')
+
+parser.add_argument('-w_d', '--weight_decay', 
+                  type = float, default = 0,
+                  help = 'Value for weight decay or L2 Regularization')
+
+parser.add_argument('-d_o', '--dropout', 
+                  type = bool, default = False,
+                  help = 'Enable Dropout')
