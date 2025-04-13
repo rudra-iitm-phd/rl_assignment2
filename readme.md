@@ -23,19 +23,23 @@ Install dependencies:
 
 ### 🧾 Command Line Arguments
 
-| Argument           | Short | Type   | Default     | Description                                                  |
-|--------------------|-------|--------|-------------|--------------------------------------------------------------|
-| `--env`            | `-env`| `str`  | `'cartpole'`| Environment to train on. Example: `'cartpole'`, `'acrobot'`  |
-| `--algorithm`      | `-a`  | `str`  | `'dueling_dqn'` | Algorithm to use: `'dueling_dqn'` or `'mc_reinforce'`     |
-| `--use_max`        | `-um` | `bool` | `False`     | Whether to constrain the advantage function using max        |
-| `--buffer_size`    | `-bs` | `int`  | `100000`    | Size of the experience replay buffer                         |
-| `--learning_rate`  | `-lr` | `float`| `1e-4`      | Learning rate for optimizer                                  |
-| `--batch_size`     | `-b`  | `int`  | `128`       | Batch size for training                                      |
-| `--gamma`          | `-g`  | `float`| `0.99`      | Discount factor for future rewards                           |
-| `--update_period`  | `-up` | `int`  | `4`         | How often to update the target network                       |
+
+| 🏷️ **Argument**       | ✂️ **Short Name** | 🔢 **Type**   | ⚙️ **Default Value**  | 📝 **Description**                                                                 |
+|------------------------|-------------------|---------------|------------------------|------------------------------------------------------------------------------------|
+| `--env`               | `-env`           | `str`         | `'cartpole'`          | 🌍 Choices of environment: `acrobot`.                                             |
+| `--algorithm`         | `-a`             | `str`         | `'dueling_dqn'`       | 🧠 Choices of algorithm: `dueling_dqn`, `mc_reinforce`.                           |
+| `--use_max`           | `-um`            | `bool`        | `False`               | 📈 Use the max to constrain the advantage function.                               |
+| `--buffer_size`       | `-bs`            | `int`         | `1e5`                 | 🗂️ Size of the replay buffer.                                                     |
+| `--learning_rate`     | `-lr`            | `float`       | `1e-4`                | ⚡ Learning rate for the optimizer.                                               |
+| `--value_learning_rate` | `-vlr`         | `float`       | `1e-3`                | 📊 Learning rate for the value optimizer.                                         |
+| `--batch_size`        | `-b`             | `int`         | `128`                 | 📦 Batch size.                                                                    |
+| `--gamma`             | `-g`             | `float`       | `0.99`                | 🔄 Gamma value used for discounting.                                              |
+| `--update_period`     | `-up`            | `int`         | `4`                   | ⏳ Time period for updating the target network parameters.                        |
+| `--use_baseline`      | `-ub`            | `bool`        | `False`               | 🧮 Use baseline for Monte Carlo REINFORCE.                                        |
+
 
 ### 🧪 Example
 
 ```bash
-python main.py -um True -env acrobot
+python main.py -env acrobot -a mc_reinforce -lr 1e-3 -ub True
 ```
