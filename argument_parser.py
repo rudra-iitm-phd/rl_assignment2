@@ -22,6 +22,10 @@ parser.add_argument('-lr', '--learning_rate',
                     type = float, default = 1e-4,
                     help = "Learning rate for the optimizer")
 
+parser.add_argument('-vlr', '--value_learning_rate',
+                    type = float, default = 1e-3,
+                    help = "Learning rate for the optimizer")
+
 parser.add_argument('-b', '--batch_size',
                     type = int, default = 128,
                     help = "Batch size")

@@ -1,5 +1,6 @@
 from collections import deque
 import numpy as np
+import shared
 
 def dueling_trainer(env, agent, n_episodes=10000, max_t=1000, eps_start=1, eps_end=0.01, eps_decay=0.985):
 
@@ -50,6 +51,9 @@ def mc_trainer(env, agent, n_episodes=5000, max_t=1000):
             action = agent.act(state)
             next_state, reward, done, _, _ = env.step(action)
             agent.rewards.append(reward)
+            if shared.configuration_script['use_baseline']:
+                state_value = agent.get_value(state)
+                agent.values.append(state_value)
             state = next_state
             episode_rewards.append(reward)
             if done:
@@ -60,12 +64,16 @@ def mc_trainer(env, agent, n_episodes=5000, max_t=1000):
         
         total_reward = sum(episode_rewards)
         scores.append(total_reward)
-        
+        avg_score = np.mean(scores[-100:])
+
+        print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, avg_score), end="")
         if i_episode % 100 == 0:
-            avg_score = np.mean(scores[-100:])
-            print(f'Episode {i_episode}\tAverage Score: {avg_score:.2f}')
-            if avg_score >= env.spec.reward_threshold:  # CartPole solving condition
-                print(f"Solved in {i_episode} episodes!")
-                break
+            
+            # print(f'Episode {i_episode}\tAverage Score: {avg_score:.2f}')
+            print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, avg_score))
+        if avg_score >= env.spec.reward_threshold:  # CartPole solving condition
+            # print(f"Solved in {i_episode} episodes!")
+            print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(i_episode, avg_score))
+            break
     return scores
 

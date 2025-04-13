@@ -7,6 +7,7 @@ import random
 import numpy as np
 from shared import device
 from torch.distributions import Categorical
+from algorithms import ValueNetwork
 
 class DuelingDQNAgent:
       def __init__(self, env, algorithm:nn.Module, policy:Policy, configuration_script:dict):
@@ -78,19 +79,17 @@ class MonteCarloREINFORCEAgent:
       def __init__(self, env, algorithm:nn.Module, policy, configuration_script:dict):
             self.env = env
             self.script = configuration_script
-            self.policy_network = self.initialize(algorithm)
-            self.optimizer = torch.optim.Adam(self.policy_network.parameters(), self.script['learning_rate'])
+            self.policy_network = self.xavier_init(algorithm(self.env.observation_space.low.shape[0], self.env.action_space.n))
+            self.policy_optimizer = torch.optim.Adam(self.policy_network.parameters(), self.script['learning_rate'])
             self.saved_log_probs = []
             self.rewards = []
+            self.values = []
             self.gamma = self.script['gamma']
+            self.value_network = self.xavier_init(ValueNetwork(self.env.observation_space.low.shape[0])) if self.script['use_baseline'] else None
+            self.value_criterion = nn.MSELoss() if self.script['use_baseline'] else None
+            self.value_optimizer = torch.optim.Adam(self.value_network.parameters(), self.script['value_learning_rate']) if self.script['use_baseline'] else None
 
-            
-      def initialize(self, algorithm):
-            state_dim = self.env.observation_space.low.shape[0]
-            n_actions = self.env.action_space.n
-            if self.script['algorithm'].lower() == 'mc_reinforce':
-                  model = algorithm(state_dim, n_actions, True) if self.script['use_baseline'] else algorithm(state_dim, n_actions, False)
-            return self.xavier_init(model)
+      
             
 
       def xavier_init(self, model):
@@ -99,10 +98,13 @@ class MonteCarloREINFORCEAgent:
                         nn.init.xavier_uniform_(p)
             return model
             
+      def get_value(self, state):
+            state = torch.FloatTensor(state)
+            return self.value_network(state)
 
       def act(self, state):
             state = torch.FloatTensor(state)
-            probs, values = self.policy_network(state)
+            probs = self.policy_network(state)
             m = Categorical(probs)
             action = m.sample()
             self.saved_log_probs.append(m.log_prob(action))
@@ -122,22 +124,35 @@ class MonteCarloREINFORCEAgent:
                   returns.insert(0, R)
                   
             returns = torch.tensor(returns)
-
+            values = torch.tensor(self.values, requires_grad = True) if self.script['use_baseline'] else None
            
-            if self.script['use_baseline']:
-                  returns = returns - returns.mean()
+            G = returns - values.detach() if self.script['use_baseline'] else returns
+                  
             
            
-            for log_prob, R in zip(self.saved_log_probs, returns):
-                  policy_loss.append(-log_prob * R)
+            for log_prob, g in zip(self.saved_log_probs, G):
+                  policy_loss.append(-log_prob * g)
                   
-            self.optimizer.zero_grad()
+            self.policy_optimizer.zero_grad()
+            if self.script['use_baseline']:
+                  self.value_optimizer.zero_grad()
             policy_loss = torch.stack(policy_loss).sum() 
+            value_loss = self.value_criterion(values, returns) if self.script['use_baseline'] else None
+            value_loss.backward() if self.script['use_baseline'] else None
             policy_loss.backward()
-            self.optimizer.step()
+
+            # torch.nn.utils.clip_grad_norm_(self.policy_network.parameters(), 10)
+            # if self.script['use_baseline'] :
+            #       torch.nn.utils.clip_grad_norm_(self.value_network.parameters(), 10) 
+
+            self.policy_optimizer.step()
+
+            if self.script['use_baseline']:
+                  self.value_optimizer.step()
             
             # Reset episode buffers
             self.saved_log_probs = []
             self.rewards = []
+            self.values = []
       
             

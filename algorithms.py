@@ -38,7 +38,7 @@ class DuelingDQN(nn.Module):
             return V + (A - A.mean(dim = 1, keepdim = True))
 
 class MonteCarloREINFORCE(nn.Module):
-      def __init__(self, state_dim:int, n_actions:int, use_baseline:bool):
+      def __init__(self, state_dim:int, n_actions:int):
             super(MonteCarloREINFORCE, self).__init__()
 
             self.policy_network = nn.Sequential(
@@ -49,13 +49,18 @@ class MonteCarloREINFORCE(nn.Module):
                   nn.Linear(64, n_actions)
             )
 
-            self.use_baseline = use_baseline
 
-            if self.use_baseline:
-                  self.value_network = nn.Sequential(
-                        nn.Linear(state_dim, 256),
-                        nn.ReLU(),
-                        nn.Linear(256, 128),
+      def forward(self, state):
+            probs = self.policy_network(state)
+            return F.softmax(probs, dim = -1)
+
+
+class ValueNetwork(nn.Module):
+      def __init__(self, state_dim:int):
+            super(ValueNetwork, self).__init__()
+
+            self.value_network = nn.Sequential(
+                        nn.Linear(state_dim, 128),
                         nn.ReLU(),
                         nn.Linear(128, 64),
                         nn.ReLU(),
@@ -63,10 +68,8 @@ class MonteCarloREINFORCE(nn.Module):
                   )
 
       def forward(self, state):
-            value = None
-            if self.use_baseline:
-                  value = self.value_network(state)
-            probs = self.policy_network(state)
-            return F.softmax(probs, dim = -1), value
+            return self.value_network(state)
+
+
 
 
