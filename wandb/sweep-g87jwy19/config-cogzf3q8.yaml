@@ -1,0 +1,12 @@
+wandb_version: 1
+
+algorithm:
+  value: dueling_dqn
+batch_size:
+  value: 256
+env:
+  value: cartpole
+learning_rate:
+  value: 0.00011685322633948464
+use_baseline:
+  value: true

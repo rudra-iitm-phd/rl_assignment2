@@ -1,0 +1,16 @@
+{"time":"2025-04-13T23:01:53.914452+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_230153-zeth52di/logs/debug-core.log"}
+{"time":"2025-04-13T23:01:54.04708+05:30","level":"INFO","msg":"created new stream","id":"zeth52di"}
+{"time":"2025-04-13T23:01:54.047157+05:30","level":"INFO","msg":"stream: started","id":"zeth52di"}
+{"time":"2025-04-13T23:01:54.047161+05:30","level":"INFO","msg":"handler: started","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:01:54.047311+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:01:54.047316+05:30","level":"INFO","msg":"sender: started","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:01:54.417891+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T23:02:50.088941+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T23:02:50.092642+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T23:02:51.101414+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.111637208,"progress":"976B/976B"}],"total_operations":1}}
+{"time":"2025-04-13T23:02:51.374871+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-13T23:02:51.714931+05:30","level":"INFO","msg":"stream: closing","id":"zeth52di"}
+{"time":"2025-04-13T23:02:51.715182+05:30","level":"INFO","msg":"handler: closed","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:02:51.715805+05:30","level":"INFO","msg":"sender: closed","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:02:51.715335+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"zeth52di"}
+{"time":"2025-04-13T23:02:51.716604+05:30","level":"INFO","msg":"stream: closed","id":"zeth52di"}

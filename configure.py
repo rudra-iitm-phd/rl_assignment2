@@ -3,7 +3,7 @@ import numpy as np
 from algorithms import DuelingDQN, MonteCarloREINFORCE
 from agent import DuelingDQNAgent, MonteCarloREINFORCEAgent
 from policy import EpsGreedy
-from trainer import dueling_trainer, mc_trainer
+from trainer import Trainer
 
 
 class Configure:
@@ -24,8 +24,8 @@ class Configure:
             }
 
             self.trainers = {
-                  'dueling_dqn':dueling_trainer,
-                  'mc_reinforce':mc_trainer
+                  'dueling_dqn':Trainer('dueling_dqn').get_trainer(),
+                  'mc_reinforce':Trainer('mc_reinforce').get_trainer()
             }
 
       def configure(self, script:dict):

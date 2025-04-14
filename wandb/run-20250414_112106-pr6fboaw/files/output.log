@@ -1,0 +1,31 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 256, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Return: 23.02
+Episode 200	Average Return: 21.20
+Episode 300	Average Return: 20.80
+Episode 400	Average Return: 21.32
+Episode 500	Average Return: 22.44
+Episode 600	Average Return: 22.87
+Episode 700	Average Return: 22.25
+Episode 800	Average Return: 22.17
+Episode 900	Average Return: 22.43
+Episode 1000	Average Return: 21.05
+Episode 1100	Average Return: 22.50
+Episode 1200	Average Return: 21.65
+Episode 1300	Average Return: 22.79
+Episode 1400	Average Return: 21.61
+Episode 1483	Average Return: 21.99
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py", line 35, in train
+    train_fn(env, rl_agent, wandb)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/trainer.py", line 80, in mc_trainer
+    logger.log({"Average return": avg_score})
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 374, in wrapper
+    and getattr(self, "_attach_pid", None) != os.getpid()
+                                              ^^^^^^^^^^^
+KeyboardInterrupt

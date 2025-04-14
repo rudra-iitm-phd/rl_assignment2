@@ -1,0 +1,50 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-pa2'}
+Episode 100	Average Return: 19.55
+Episode 200	Average Return: 21.12
+Episode 300	Average Return: 20.30
+Episode 400	Average Return: 22.36
+Episode 500	Average Return: 22.28
+Episode 600	Average Return: 21.66
+Episode 700	Average Return: 22.29
+Episode 800	Average Return: 23.43
+Episode 900	Average Return: 20.45
+Episode 1000	Average Return: 23.36
+Episode 1100	Average Return: 21.72
+Episode 1200	Average Return: 19.83
+Episode 1300	Average Return: 20.33
+Episode 1400	Average Return: 21.07
+Episode 1500	Average Return: 22.38
+Episode 1600	Average Return: 19.72
+Episode 1700	Average Return: 21.26
+Episode 1800	Average Return: 20.47
+Episode 1900	Average Return: 21.91
+Episode 2000	Average Return: 22.56
+Episode 2100	Average Return: 23.44
+Episode 2200	Average Return: 22.33
+Episode 2300	Average Return: 22.71
+Episode 2400	Average Return: 21.73
+Episode 2500	Average Return: 19.35
+Episode 2600	Average Return: 24.42
+Episode 2700	Average Return: 22.70
+Episode 2800	Average Return: 22.33
+Episode 2900	Average Return: 21.90
+Episode 3000	Average Return: 23.20
+Episode 3100	Average Return: 19.38
+Episode 3200	Average Return: 20.17
+Episode 3300	Average Return: 21.41
+Episode 3329	Average Return: 20.43
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py", line 39, in train
+    train_fn(env, rl_agent, wandb)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/trainer.py", line 59, in mc_trainer
+    action = agent.act(state)
+             ^^^^^^^^^^^^^^^^
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/agent.py", line 113, in act
+    self.saved_log_probs.append(m.log_prob(action))
+                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/distributions/categorical.py", line 137, in log_prob
+    self._validate_sample(value)
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/distributions/distribution.py", line 311, in _validate_sample
+    if not valid.all():
+           ^^^^^^^^^^^
+KeyboardInterrupt

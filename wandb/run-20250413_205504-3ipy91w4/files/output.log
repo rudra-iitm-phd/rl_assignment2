@@ -1,0 +1,14 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.00020092764651836285, 'value_learning_rate': 0.001, 'batch_size': 256, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': True, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Score: 25.64
+Episode 200	Average Score: 36.03
+Episode 300	Average Score: 42.07
+Episode 400	Average Score: 52.98
+Episode 500	Average Score: 59.62
+Episode 600	Average Score: 94.32
+Episode 700	Average Score: 171.36
+Episode 800	Average Score: 232.72
+Episode 900	Average Score: 295.93
+Episode 1000	Average Score: 245.44
+Episode 1100	Average Score: 286.40
+Episode 1149	Average Score: 475.87
+Environment solved in 1149 episodes!	Average Score: 475.87

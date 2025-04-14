@@ -3,7 +3,8 @@ from collections import deque, namedtuple
 import random
 import torch
 from shared import device
-
+np.random.seed(0)
+torch.manual_seed(0)
 class ReplayBuffer:
       def __init__(self, capacity:int):
             self.buffer = deque(maxlen = capacity)

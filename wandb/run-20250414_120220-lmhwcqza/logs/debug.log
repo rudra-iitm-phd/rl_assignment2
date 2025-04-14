@@ -1,0 +1,26 @@
+2025-04-14 12:02:20,707 INFO    MainThread:97713 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-14 12:02:20,707 INFO    MainThread:97713 [wandb_setup.py:_flush():67] Configure stats pid to 97713
+2025-04-14 12:02:20,707 INFO    MainThread:97713 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-04-14 12:02:20,707 INFO    MainThread:97713 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/settings
+2025-04-14 12:02:20,707 INFO    MainThread:97713 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_120220-lmhwcqza/logs/debug.log
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_120220-lmhwcqza/logs/debug-internal.log
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:init():761] calling init triggers
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'env': 'acrobot', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 256, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2', '_wandb': {}}
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:init():784] starting backend
+2025-04-14 12:02:20,708 INFO    MainThread:97713 [wandb_init.py:init():788] sending inform_init request
+2025-04-14 12:02:20,806 INFO    MainThread:97713 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-14 12:02:20,806 INFO    MainThread:97713 [wandb_init.py:init():798] backend started and connected
+2025-04-14 12:02:20,810 INFO    MainThread:97713 [wandb_init.py:init():891] updated telemetry
+2025-04-14 12:02:20,851 INFO    MainThread:97713 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-14 12:02:21,429 INFO    MainThread:97713 [wandb_init.py:init():990] starting run threads in backend
+2025-04-14 12:02:21,830 INFO    MainThread:97713 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-14 12:02:21,831 INFO    MainThread:97713 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-14 12:02:21,831 INFO    MainThread:97713 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-14 12:02:21,831 INFO    MainThread:97713 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-14 12:02:21,834 INFO    MainThread:97713 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-14 12:10:28,077 INFO    MainThread:97713 [wandb_run.py:_finish():2112] finishing run da24d008-iit-madras/rl-assignment-2/lmhwcqza
+2025-04-14 12:10:28,081 INFO    MainThread:97713 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-04-14 12:10:28,081 INFO    MainThread:97713 [wandb_run.py:_restore():2322] restore
+2025-04-14 12:10:28,082 INFO    MainThread:97713 [wandb_run.py:_restore():2328] restore done

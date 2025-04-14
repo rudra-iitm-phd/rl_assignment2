@@ -1,0 +1,11 @@
+{"time":"2025-04-14T20:34:06.830232+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_203406-sliijmhf/logs/debug-core.log"}
+{"time":"2025-04-14T20:34:06.98427+05:30","level":"INFO","msg":"created new stream","id":"sliijmhf"}
+{"time":"2025-04-14T20:34:06.984419+05:30","level":"INFO","msg":"stream: started","id":"sliijmhf"}
+{"time":"2025-04-14T20:34:06.98447+05:30","level":"INFO","msg":"handler: started","stream_id":"sliijmhf"}
+{"time":"2025-04-14T20:34:06.98447+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sliijmhf"}
+{"time":"2025-04-14T20:34:06.984457+05:30","level":"INFO","msg":"sender: started","stream_id":"sliijmhf"}
+{"time":"2025-04-14T20:34:07.445524+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T20:49:41.79601+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T20:49:41.799169+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T20:49:42.884311+05:30","level":"INFO","msg":"stream: closing","id":"sliijmhf"}
+{"time":"2025-04-14T20:49:42.884302+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}

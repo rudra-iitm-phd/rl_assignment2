@@ -1,0 +1,52 @@
+{
+  "os": "macOS-10.16-x86_64-i386-64bit",
+  "python": "CPython 3.11.10",
+  "startedAt": "2025-04-14T12:23:59.204416Z",
+  "args": [
+    "-env",
+    "acrobot",
+    "-a",
+    "dueling_dqn",
+    "-lr",
+    "1e-3"
+  ],
+  "program": "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py",
+  "codePath": "main.py",
+  "git": {
+    "remote": "https://github.com/rudra-iitm-phd/rl_assignment2.git",
+    "commit": "bbe66f5ae922e16f8eb5deb8a27fdfd3f38cc60d"
+  },
+  "email": "da24d008@smail.iitm.ac.in",
+  "root": "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2",
+  "host": "Rudras-MacBook-Air.local",
+  "executable": "/opt/anaconda3/envs/rl_env/bin/python",
+  "codePathLocal": "main.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "226986582016"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "226986582016"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Unknown",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "7516192768",
+    "ramTotalBytes": "8589934592"
+  }
+}

@@ -1,0 +1,28 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Return: 22.17
+Episode 200	Average Return: 23.84
+Episode 300	Average Return: 21.86
+Episode 400	Average Return: 22.00
+Episode 500	Average Return: 21.26
+Episode 600	Average Return: 20.20
+Episode 671	Average Return: 22.29
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py", line 35, in train
+    train_fn(env, rl_agent, wandb)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/trainer.py", line 74, in mc_trainer
+    agent.update_policy()
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/agent.py", line 136, in update_policy
+    self.policy_optimizer.zero_grad()
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/_dynamo/decorators.py", line 46, in disable
+    return DisableContext()(fn)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 437, in __call__
+    filename = inspect.getsourcefile(fn)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/inspect.py", line 932, in getsourcefile
+    def getsourcefile(object):
+
+KeyboardInterrupt

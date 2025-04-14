@@ -1,0 +1,11 @@
+{"time":"2025-04-13T19:45:19.325063+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_194518-7chd75pn/logs/debug-core.log"}
+{"time":"2025-04-13T19:45:19.705593+05:30","level":"INFO","msg":"created new stream","id":"7chd75pn"}
+{"time":"2025-04-13T19:45:19.705686+05:30","level":"INFO","msg":"stream: started","id":"7chd75pn"}
+{"time":"2025-04-13T19:45:19.705715+05:30","level":"INFO","msg":"handler: started","stream_id":"7chd75pn"}
+{"time":"2025-04-13T19:45:19.705725+05:30","level":"INFO","msg":"sender: started","stream_id":"7chd75pn"}
+{"time":"2025-04-13T19:45:19.705891+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"7chd75pn"}
+{"time":"2025-04-13T19:45:20.075257+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T20:44:17.220282+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:57353->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T20:44:22.458925+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T20:44:22.491754+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T20:44:23.71304+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

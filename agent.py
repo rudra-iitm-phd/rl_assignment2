@@ -9,6 +9,9 @@ from shared import device
 from torch.distributions import Categorical
 from algorithms import ValueNetwork
 
+torch.manual_seed(0)
+np.random.seed(0)
+
 class DuelingDQNAgent:
       def __init__(self, env, algorithm:nn.Module, policy:Policy, configuration_script:dict):
             self.env = env 

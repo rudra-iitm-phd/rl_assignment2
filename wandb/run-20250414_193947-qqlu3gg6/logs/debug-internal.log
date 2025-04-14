@@ -1,0 +1,16 @@
+{"time":"2025-04-14T19:39:47.936033+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_193947-qqlu3gg6/logs/debug-core.log"}
+{"time":"2025-04-14T19:39:48.086937+05:30","level":"INFO","msg":"created new stream","id":"qqlu3gg6"}
+{"time":"2025-04-14T19:39:48.087053+05:30","level":"INFO","msg":"stream: started","id":"qqlu3gg6"}
+{"time":"2025-04-14T19:39:48.087075+05:30","level":"INFO","msg":"handler: started","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:39:48.087097+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:39:48.087423+05:30","level":"INFO","msg":"sender: started","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:39:48.678037+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T19:53:18.624603+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T19:53:18.629646+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T19:53:19.642277+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.43074975,"progress":"143B/143B"},{"desc":"uploading output.log","runtime_seconds":0.43063,"progress":"453B/453B"},{"desc":"uploading history steps 388-391, summary, console lines 2-3","runtime_seconds":0.206033792},{"desc":"uploading config.yaml","runtime_seconds":0.15609125,"progress":"934B/934B"}],"total_operations":4}}
+{"time":"2025-04-14T19:53:20.590515+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T19:53:20.902451+05:30","level":"INFO","msg":"stream: closing","id":"qqlu3gg6"}
+{"time":"2025-04-14T19:53:20.902703+05:30","level":"INFO","msg":"handler: closed","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:53:20.903279+05:30","level":"INFO","msg":"sender: closed","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:53:20.902838+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qqlu3gg6"}
+{"time":"2025-04-14T19:53:20.903846+05:30","level":"INFO","msg":"stream: closed","id":"qqlu3gg6"}

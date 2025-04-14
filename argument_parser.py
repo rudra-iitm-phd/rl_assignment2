@@ -41,3 +41,15 @@ parser.add_argument('-up', '--update_period',
 parser.add_argument('-ub', '--use_baseline',
                     type = bool, default = False,
                     help = "Use baseline for the Monte Carlo : REINFORCE")
+
+parser.add_argument('--wandb_sweep', action='store_true', help='Enable W&B sweep')
+
+parser.add_argument('--sweep_id', type = str, help = "Sweep ID", default = None)
+
+parser.add_argument('-we', '--wandb_entity', 
+                  type = str, default = 'da24d008-iit-madras' ,
+                  help = 'Wandb Entity used to track experiments in the Weights & Biases dashboard')
+
+parser.add_argument('-wp', '--wandb_project', 
+                  type = str, default = 'rl-pa2' ,
+                  help = 'Project name used to track experiments in Weights & Biases dashboard')

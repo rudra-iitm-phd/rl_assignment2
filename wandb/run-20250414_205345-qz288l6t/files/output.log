@@ -1,0 +1,21 @@
+{'env': 'acrobot', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-pa2'}
+Episode 100	Average Return: -769.99
+Episode 200	Average Return: -819.12
+Episode 300	Average Return: -773.67
+Episode 400	Average Return: -812.39
+Episode 500	Average Return: -890.08
+Episode 600	Average Return: -766.65
+Episode 700	Average Return: -922.91
+Episode 702	Average Return: -924.37
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py", line 39, in train
+    train_fn(env, rl_agent, wandb)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/trainer.py", line 75, in mc_trainer
+    agent.update_policy()
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/agent.py", line 145, in update_policy
+    policy_loss.backward()
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

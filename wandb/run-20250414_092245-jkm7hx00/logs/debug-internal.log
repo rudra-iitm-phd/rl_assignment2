@@ -1,0 +1,16 @@
+{"time":"2025-04-14T09:22:45.521717+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_092245-jkm7hx00/logs/debug-core.log"}
+{"time":"2025-04-14T09:22:45.662132+05:30","level":"INFO","msg":"created new stream","id":"jkm7hx00"}
+{"time":"2025-04-14T09:22:45.662233+05:30","level":"INFO","msg":"stream: started","id":"jkm7hx00"}
+{"time":"2025-04-14T09:22:45.662266+05:30","level":"INFO","msg":"handler: started","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:22:45.662429+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:22:45.66252+05:30","level":"INFO","msg":"sender: started","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:22:46.02817+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T09:23:02.623805+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T09:23:02.626934+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T09:23:03.607103+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T09:23:03.682998+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-04-14T09:23:03.68302+05:30","level":"INFO","msg":"stream: closing","id":"jkm7hx00"}
+{"time":"2025-04-14T09:23:03.899806+05:30","level":"INFO","msg":"handler: closed","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:23:03.899881+05:30","level":"INFO","msg":"sender: closed","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:23:03.899855+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jkm7hx00"}
+{"time":"2025-04-14T09:23:03.901366+05:30","level":"INFO","msg":"stream: closed","id":"jkm7hx00"}

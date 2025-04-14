@@ -1,0 +1,16 @@
+{"time":"2025-04-14T18:09:14.23977+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_180914-byr5oxtq/logs/debug-core.log"}
+{"time":"2025-04-14T18:09:14.395726+05:30","level":"INFO","msg":"created new stream","id":"byr5oxtq"}
+{"time":"2025-04-14T18:09:14.39584+05:30","level":"INFO","msg":"stream: started","id":"byr5oxtq"}
+{"time":"2025-04-14T18:09:14.395887+05:30","level":"INFO","msg":"handler: started","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:09:14.395889+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:09:14.396018+05:30","level":"INFO","msg":"sender: started","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:09:14.852845+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T18:22:39.300794+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T18:22:39.305322+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T18:22:40.31203+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.393088542,"progress":"488B/488B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.393064166,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.0772555,"progress":"932B/932B"}],"total_operations":3}}
+{"time":"2025-04-14T18:22:40.582756+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T18:22:41.060099+05:30","level":"INFO","msg":"stream: closing","id":"byr5oxtq"}
+{"time":"2025-04-14T18:22:41.060309+05:30","level":"INFO","msg":"handler: closed","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:22:41.060405+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:22:41.060872+05:30","level":"INFO","msg":"sender: closed","stream_id":"byr5oxtq"}
+{"time":"2025-04-14T18:22:41.061367+05:30","level":"INFO","msg":"stream: closed","id":"byr5oxtq"}

@@ -1,6 +1,6 @@
 import numpy as np 
 import torch 
-
+torch.manual_seed(0)
 
 class Policy:
       def __init__(self, *args) -> None:

@@ -1,0 +1,5 @@
+{'env': 'acrobot', 'algorithm': 'dueling_dqn', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-pa2'}
+Episode 100	Average Score: -439.02
+Episode 200	Average Score: -107.80
+Episode 226	Average Score: -99.829
+Environment solved in 226 episodes!	Average Score: -99.82

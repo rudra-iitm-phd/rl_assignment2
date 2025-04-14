@@ -1,0 +1,12 @@
+wandb_version: 1
+
+algorithm:
+  value: mc_reinforce
+batch_size:
+  value: 128
+env:
+  value: cartpole
+learning_rate:
+  value: 0.0008025030192329248
+use_baseline:
+  value: true

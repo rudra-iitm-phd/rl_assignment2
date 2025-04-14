@@ -1,0 +1,39 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.0004, 'value_learning_rate': 0.001, 'batch_size': 64, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Return: 22.72
+Episode 200	Average Return: 21.70
+Episode 300	Average Return: 21.92
+Episode 400	Average Return: 21.66
+Episode 500	Average Return: 22.28
+Episode 600	Average Return: 22.57
+Episode 700	Average Return: 21.39
+Episode 800	Average Return: 20.80
+Episode 900	Average Return: 22.07
+Episode 1000	Average Return: 23.32
+Episode 1100	Average Return: 21.12
+Episode 1200	Average Return: 21.47
+Episode 1300	Average Return: 21.52
+Episode 1400	Average Return: 20.86
+Episode 1500	Average Return: 22.15
+Episode 1600	Average Return: 20.12
+Episode 1700	Average Return: 19.59
+Episode 1800	Average Return: 20.17
+Episode 1900	Average Return: 21.66
+Episode 2000	Average Return: 21.84
+Episode 2100	Average Return: 21.61
+Episode 2200	Average Return: 20.44
+Episode 2300	Average Return: 21.06
+Episode 2400	Average Return: 23.51
+Episode 2464	Average Return: 21.49
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/main.py", line 35, in train
+    train_fn(env, rl_agent, wandb)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/trainer.py", line 62, in mc_trainer
+    action = agent.act(state)
+             ^^^^^^^^^^^^^^^^
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/agent.py", line 109, in act
+    action = m.sample()
+             ^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/torch/distributions/categorical.py", line 132, in sample
+    samples_2d = torch.multinomial(probs_2d, sample_shape.numel(), True).T
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

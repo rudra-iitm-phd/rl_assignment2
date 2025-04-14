@@ -1,0 +1,8 @@
+{'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.0003757079221416128, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': True, 'wandb_sweep': True, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Score: 21.98
+Episode 200	Average Score: 37.66
+Episode 300	Average Score: 61.01
+Episode 400	Average Score: 86.19
+Episode 500	Average Score: 161.12
+Episode 600	Average Score: 179.47
+Episode 667	Average Score: 138.22

@@ -1,0 +1,3 @@
+{'env': 'acrobot', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.00027349360185742233, 'value_learning_rate': 0.001, 'batch_size': 256, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': True, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 12	Average Score: -1000.00
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

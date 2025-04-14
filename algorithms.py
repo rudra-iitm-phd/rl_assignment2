@@ -1,6 +1,7 @@
 import torch 
 import torch.nn as nn 
 import torch.nn.functional as F
+torch.manual_seed(0)
 
 class DuelingDQN(nn.Module):
       def __init__(self, state_dim:int, n_actions:int, use_max:bool):

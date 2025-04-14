@@ -1,0 +1,16 @@
+{"time":"2025-04-14T11:34:42.50174+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_113442-sqpsfdrr/logs/debug-core.log"}
+{"time":"2025-04-14T11:34:42.649031+05:30","level":"INFO","msg":"created new stream","id":"sqpsfdrr"}
+{"time":"2025-04-14T11:34:42.649231+05:30","level":"INFO","msg":"stream: started","id":"sqpsfdrr"}
+{"time":"2025-04-14T11:34:42.649261+05:30","level":"INFO","msg":"handler: started","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:34:42.64949+05:30","level":"INFO","msg":"sender: started","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:34:42.649276+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:34:43.063085+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T11:35:47.538106+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T11:35:47.541112+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T11:35:48.760997+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T11:35:48.813064+05:30","level":"INFO","msg":"stream: closing","id":"sqpsfdrr"}
+{"time":"2025-04-14T11:35:48.813077+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-04-14T11:35:49.113466+05:30","level":"INFO","msg":"handler: closed","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:35:49.113522+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:35:49.113833+05:30","level":"INFO","msg":"sender: closed","stream_id":"sqpsfdrr"}
+{"time":"2025-04-14T11:35:49.114806+05:30","level":"INFO","msg":"stream: closed","id":"sqpsfdrr"}

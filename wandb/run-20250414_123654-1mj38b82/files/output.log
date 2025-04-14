@@ -1,0 +1,12 @@
+{'env': 'acrobot', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': True, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Return: -243.64
+Episode 200	Average Return: -166.39
+Episode 300	Average Return: -117.62
+Episode 400	Average Return: -120.36
+Episode 500	Average Return: -110.56
+Episode 600	Average Return: -104.29
+Episode 700	Average Return: -109.45
+Episode 800	Average Return: -108.29
+Episode 900	Average Return: -105.27
+Episode 947	Average Return: -99.870
+Environment solved in 947 episodes!	Average Score: -99.87

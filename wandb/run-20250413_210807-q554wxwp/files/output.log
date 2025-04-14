@@ -1,0 +1,17 @@
+{'env': 'acrobot', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.0005836775149601104, 'value_learning_rate': 0.001, 'batch_size': 256, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': True, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2'}
+Episode 100	Average Score: -538.31
+Episode 200	Average Score: -172.68
+Episode 300	Average Score: -157.91
+Episode 400	Average Score: -149.25
+Episode 500	Average Score: -129.30
+Episode 600	Average Score: -112.11
+Episode 700	Average Score: -109.22
+Episode 800	Average Score: -112.03
+Episode 900	Average Score: -104.26
+Episode 1000	Average Score: -101.71
+Episode 1100	Average Score: -109.16
+Episode 1200	Average Score: -110.92
+Episode 1300	Average Score: -104.13
+Episode 1400	Average Score: -111.15
+Episode 1459	Average Score: -99.989
+Environment solved in 1459 episodes!	Average Score: -99.98

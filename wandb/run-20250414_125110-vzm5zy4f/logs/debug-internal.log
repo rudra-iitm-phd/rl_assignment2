@@ -1,0 +1,17 @@
+{"time":"2025-04-14T12:51:10.534065+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_125110-vzm5zy4f/logs/debug-core.log"}
+{"time":"2025-04-14T12:51:10.686085+05:30","level":"INFO","msg":"created new stream","id":"vzm5zy4f"}
+{"time":"2025-04-14T12:51:10.686245+05:30","level":"INFO","msg":"stream: started","id":"vzm5zy4f"}
+{"time":"2025-04-14T12:51:10.686408+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vzm5zy4f"}
+{"time":"2025-04-14T12:51:10.686416+05:30","level":"INFO","msg":"handler: started","stream_id":"vzm5zy4f"}
+{"time":"2025-04-14T12:51:10.686677+05:30","level":"INFO","msg":"sender: started","stream_id":"vzm5zy4f"}
+{"time":"2025-04-14T12:51:11.062044+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T13:05:50.671102+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/rl-assignment-2/vzm5zy4f/file_stream\": dial tcp 35.186.228.49:443: connect: network is unreachable"}
+{"time":"2025-04-14T13:05:52.779683+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/rl-assignment-2/vzm5zy4f/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-14T13:05:57.14954+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/rl-assignment-2/vzm5zy4f/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-14T13:06:08.211621+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:65141->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-04-14T13:06:40.398675+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-14T13:07:15.007074+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-14T13:07:20.768073+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/rl-assignment-2/vzm5zy4f/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-04-14T13:07:53.276981+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-14T13:08:42.674495+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-14T13:08:55.212685+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/rl-assignment-2/vzm5zy4f/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}

@@ -1,0 +1,16 @@
+{"time":"2025-04-14T12:48:23.729699+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_124823-1ogemavm/logs/debug-core.log"}
+{"time":"2025-04-14T12:48:23.872137+05:30","level":"INFO","msg":"created new stream","id":"1ogemavm"}
+{"time":"2025-04-14T12:48:23.872217+05:30","level":"INFO","msg":"stream: started","id":"1ogemavm"}
+{"time":"2025-04-14T12:48:23.87228+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:23.872424+05:30","level":"INFO","msg":"handler: started","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:23.872867+05:30","level":"INFO","msg":"sender: started","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:24.44235+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T12:48:25.701299+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T12:48:25.703106+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T12:48:26.713473+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.696740416,"progress":"367B/367B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.696737084,"progress":"24B/24B"},{"desc":"uploading config.yaml","runtime_seconds":0.392360625,"progress":"943B/943B"}],"total_operations":3}}
+{"time":"2025-04-14T12:48:27.33199+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T12:48:27.642763+05:30","level":"INFO","msg":"stream: closing","id":"1ogemavm"}
+{"time":"2025-04-14T12:48:27.642901+05:30","level":"INFO","msg":"handler: closed","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:27.643046+05:30","level":"INFO","msg":"sender: closed","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:27.643035+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"1ogemavm"}
+{"time":"2025-04-14T12:48:27.643643+05:30","level":"INFO","msg":"stream: closed","id":"1ogemavm"}

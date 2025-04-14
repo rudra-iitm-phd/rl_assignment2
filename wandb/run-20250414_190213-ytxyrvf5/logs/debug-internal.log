@@ -1,0 +1,16 @@
+{"time":"2025-04-14T19:02:13.829037+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_190213-ytxyrvf5/logs/debug-core.log"}
+{"time":"2025-04-14T19:02:13.964103+05:30","level":"INFO","msg":"created new stream","id":"ytxyrvf5"}
+{"time":"2025-04-14T19:02:13.964163+05:30","level":"INFO","msg":"stream: started","id":"ytxyrvf5"}
+{"time":"2025-04-14T19:02:13.964166+05:30","level":"INFO","msg":"handler: started","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:02:13.96419+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:02:13.964464+05:30","level":"INFO","msg":"sender: started","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:02:14.365611+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T19:14:23.196817+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T19:14:23.203071+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T19:14:24.210636+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.39884775,"progress":"487B/487B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.397270625,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.120236667,"progress":"934B/934B"}],"total_operations":3}}
+{"time":"2025-04-14T19:14:24.422873+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T19:14:24.78862+05:30","level":"INFO","msg":"stream: closing","id":"ytxyrvf5"}
+{"time":"2025-04-14T19:14:24.788815+05:30","level":"INFO","msg":"handler: closed","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:14:24.788878+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:14:24.789315+05:30","level":"INFO","msg":"sender: closed","stream_id":"ytxyrvf5"}
+{"time":"2025-04-14T19:14:24.790021+05:30","level":"INFO","msg":"stream: closed","id":"ytxyrvf5"}

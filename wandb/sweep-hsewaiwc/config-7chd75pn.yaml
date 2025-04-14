@@ -1,0 +1,12 @@
+wandb_version: 1
+
+algorithm:
+  value: mc_reinforce
+batch_size:
+  value: 64
+env:
+  value: acrobot
+learning_rate:
+  value: 0.04384497635614121
+use_baseline:
+  value: true

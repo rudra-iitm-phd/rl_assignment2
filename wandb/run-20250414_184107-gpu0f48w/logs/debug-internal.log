@@ -1,0 +1,16 @@
+{"time":"2025-04-14T18:41:08.455284+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_184107-gpu0f48w/logs/debug-core.log"}
+{"time":"2025-04-14T18:41:08.608551+05:30","level":"INFO","msg":"created new stream","id":"gpu0f48w"}
+{"time":"2025-04-14T18:41:08.608674+05:30","level":"INFO","msg":"stream: started","id":"gpu0f48w"}
+{"time":"2025-04-14T18:41:08.608675+05:30","level":"INFO","msg":"handler: started","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:41:08.608729+05:30","level":"INFO","msg":"sender: started","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:41:08.608834+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:41:09.041014+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T18:51:15.056214+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T18:51:15.065962+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T18:51:16.06754+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.323243583,"progress":"452B/452B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.320312083,"progress":"141B/141B"},{"desc":"uploading config.yaml","runtime_seconds":0.045345167,"progress":"931B/931B"}],"total_operations":3}}
+{"time":"2025-04-14T18:51:16.551982+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T18:51:16.90246+05:30","level":"INFO","msg":"stream: closing","id":"gpu0f48w"}
+{"time":"2025-04-14T18:51:16.902758+05:30","level":"INFO","msg":"handler: closed","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:51:16.903188+05:30","level":"INFO","msg":"sender: closed","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:51:16.902829+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gpu0f48w"}
+{"time":"2025-04-14T18:51:16.903888+05:30","level":"INFO","msg":"stream: closed","id":"gpu0f48w"}

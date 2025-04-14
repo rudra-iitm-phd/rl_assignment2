@@ -1,0 +1,42 @@
+2025-04-13 19:31:04,384 INFO    MainThread:90170 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-13 19:31:04,384 INFO    MainThread:90170 [wandb_setup.py:_flush():67] Configure stats pid to 90170
+2025-04-13 19:31:04,384 INFO    MainThread:90170 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/settings
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_193104-hci84x4z/logs/debug.log
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_193104-hci84x4z/logs/debug-internal.log
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:init():761] calling init triggers
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'env': 'cartpole', 'algorithm': 'mc_reinforce', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': True, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'RL-assignment-1', '_wandb': {}}
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:init():784] starting backend
+2025-04-13 19:31:04,385 INFO    MainThread:90170 [wandb_init.py:init():788] sending inform_init request
+2025-04-13 19:31:04,877 WARNING MainThread:90170 [wandb_init.py:init():1472] interrupted
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 790, in init
+    settings=settings.to_proto(),
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_settings.py", line 1427, in to_proto
+    for k, v in self.model_dump(exclude_none=True).items():
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/pydantic/main.py", line 390, in model_dump
+    return self.__pydantic_serializer__.to_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/site-packages/wandb/sdk/wandb_settings.py", line 1059, in _os
+    return platform.platform(aliased=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/platform.py", line 1225, in platform
+    macos_release = mac_ver()[0]
+                    ^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/platform.py", line 453, in mac_ver
+    info = _mac_ver_xml()
+           ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/platform.py", line 425, in _mac_ver_xml
+    import plistlib
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/plistlib.py", line 70, in <module>
+    from xml.parsers.expat import ParserCreate
+  File "/opt/anaconda3/envs/rl_env/lib/python3.11/xml/parsers/expat.py", line 4, in <module>
+    from pyexpat import *
+KeyboardInterrupt

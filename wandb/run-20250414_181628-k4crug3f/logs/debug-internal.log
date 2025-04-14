@@ -1,0 +1,16 @@
+{"time":"2025-04-14T18:16:28.143267+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_181628-k4crug3f/logs/debug-core.log"}
+{"time":"2025-04-14T18:16:28.295567+05:30","level":"INFO","msg":"created new stream","id":"k4crug3f"}
+{"time":"2025-04-14T18:16:28.295683+05:30","level":"INFO","msg":"stream: started","id":"k4crug3f"}
+{"time":"2025-04-14T18:16:28.295749+05:30","level":"INFO","msg":"sender: started","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:16:28.295743+05:30","level":"INFO","msg":"handler: started","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:16:28.29581+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:16:28.863524+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T18:29:16.421651+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T18:29:16.429776+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T18:29:17.435531+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.364828167,"progress":"488B/488B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3633385,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.07300575,"progress":"932B/932B"}],"total_operations":3}}
+{"time":"2025-04-14T18:29:17.698756+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T18:29:18.057803+05:30","level":"INFO","msg":"stream: closing","id":"k4crug3f"}
+{"time":"2025-04-14T18:29:18.058039+05:30","level":"INFO","msg":"handler: closed","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:29:18.058618+05:30","level":"INFO","msg":"sender: closed","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:29:18.058303+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"k4crug3f"}
+{"time":"2025-04-14T18:29:18.059188+05:30","level":"INFO","msg":"stream: closed","id":"k4crug3f"}

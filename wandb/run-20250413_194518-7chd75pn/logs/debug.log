@@ -1,0 +1,27 @@
+2025-04-13 19:45:18,539 INFO    Thread-4 (_run_job):90975 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-13 19:45:18,539 INFO    Thread-4 (_run_job):90975 [wandb_setup.py:_flush():67] Configure stats pid to 90975
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/settings
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_194518-7chd75pn/logs/debug.log
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_194518-7chd75pn/logs/debug-internal.log
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():761] calling init triggers
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():766] wandb.init called with sweep_config: {'algorithm': 'mc_reinforce', 'batch_size': 64, 'env': 'acrobot', 'learning_rate': 0.04384497635614121, 'use_baseline': True}
+config: {'env': 'cartpole', 'algorithm': 'dueling_dqn', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.0001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': True, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-assignment-2', '_wandb': {}}
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():784] starting backend
+2025-04-13 19:45:18,540 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():788] sending inform_init request
+2025-04-13 19:45:19,317 INFO    Thread-4 (_run_job):90975 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-13 19:45:19,317 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():798] backend started and connected
+2025-04-13 19:45:19,319 INFO    Thread-4 (_run_job):90975 [wandb_run.py:_config_callback():1261] config_cb None None {'algorithm': 'mc_reinforce', 'batch_size': 64, 'env': 'acrobot', 'learning_rate': 0.04384497635614121, 'use_baseline': True}
+2025-04-13 19:45:19,321 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():891] updated telemetry
+2025-04-13 19:45:19,353 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-13 19:45:20,070 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():990] starting run threads in backend
+2025-04-13 19:45:20,565 INFO    Thread-4 (_run_job):90975 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-13 19:45:20,565 INFO    Thread-4 (_run_job):90975 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-13 19:45:20,566 INFO    Thread-4 (_run_job):90975 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-13 19:45:20,566 INFO    Thread-4 (_run_job):90975 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-13 19:45:20,570 INFO    Thread-4 (_run_job):90975 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-13 20:44:22,450 INFO    MainThread:90975 [wandb_run.py:_finish():2112] finishing run da24d008-iit-madras/rl-assignment-2/7chd75pn
+2025-04-13 20:44:22,452 INFO    MainThread:90975 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-04-13 20:44:22,452 INFO    MainThread:90975 [wandb_run.py:_restore():2322] restore
+2025-04-13 20:44:22,453 INFO    MainThread:90975 [wandb_run.py:_restore():2328] restore done

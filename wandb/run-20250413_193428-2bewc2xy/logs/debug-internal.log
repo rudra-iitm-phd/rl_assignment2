@@ -1,0 +1,16 @@
+{"time":"2025-04-13T19:34:28.382362+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250413_193428-2bewc2xy/logs/debug-core.log"}
+{"time":"2025-04-13T19:34:28.523539+05:30","level":"INFO","msg":"created new stream","id":"2bewc2xy"}
+{"time":"2025-04-13T19:34:28.523625+05:30","level":"INFO","msg":"stream: started","id":"2bewc2xy"}
+{"time":"2025-04-13T19:34:28.523625+05:30","level":"INFO","msg":"handler: started","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:34:28.523656+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:34:28.523762+05:30","level":"INFO","msg":"sender: started","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:34:29.092926+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T19:35:50.94412+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T19:35:50.946853+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T19:35:51.956314+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.428922458,"progress":"593B/593B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.428848083,"progress":"116B/116B"},{"desc":"uploading config.yaml","runtime_seconds":0.165587375,"progress":"942B/942B"}],"total_operations":3}}
+{"time":"2025-04-13T19:35:52.689051+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-13T19:35:53.029397+05:30","level":"INFO","msg":"stream: closing","id":"2bewc2xy"}
+{"time":"2025-04-13T19:35:53.029603+05:30","level":"INFO","msg":"handler: closed","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:35:53.029843+05:30","level":"INFO","msg":"sender: closed","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:35:53.02967+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2bewc2xy"}
+{"time":"2025-04-13T19:35:53.030473+05:30","level":"INFO","msg":"stream: closed","id":"2bewc2xy"}

@@ -1,0 +1,6 @@
+{'env': 'cartpole', 'algorithm': 'dueling_dqn', 'use_max': False, 'buffer_size': 100000, 'learning_rate': 0.0001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-pa2'}
+Episode 100	Average Score: 129.27
+Episode 200	Average Score: 281.75
+Episode 300	Average Score: 232.68
+Episode 400	Average Score: 108.02
+Episode 448	Average Score: 101.88

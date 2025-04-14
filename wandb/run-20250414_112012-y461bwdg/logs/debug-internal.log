@@ -1,0 +1,16 @@
+{"time":"2025-04-14T11:20:12.307391+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_112012-y461bwdg/logs/debug-core.log"}
+{"time":"2025-04-14T11:20:12.454578+05:30","level":"INFO","msg":"created new stream","id":"y461bwdg"}
+{"time":"2025-04-14T11:20:12.454679+05:30","level":"INFO","msg":"stream: started","id":"y461bwdg"}
+{"time":"2025-04-14T11:20:12.454841+05:30","level":"INFO","msg":"handler: started","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:12.455035+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:12.455169+05:30","level":"INFO","msg":"sender: started","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:12.88129+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T11:20:41.883932+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T11:20:41.890994+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T11:20:42.801597+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T11:20:42.900179+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 677-1282, summary, console lines 7-28","runtime_seconds":0.096815541}],"total_operations":1}}
+{"time":"2025-04-14T11:20:43.154202+05:30","level":"INFO","msg":"stream: closing","id":"y461bwdg"}
+{"time":"2025-04-14T11:20:43.154404+05:30","level":"INFO","msg":"handler: closed","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:43.154737+05:30","level":"INFO","msg":"sender: closed","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:43.154554+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"y461bwdg"}
+{"time":"2025-04-14T11:20:43.155699+05:30","level":"INFO","msg":"stream: closed","id":"y461bwdg"}

@@ -1,0 +1,4 @@
+{'env': 'cartpole', 'algorithm': 'dueling_dqn', 'use_max': True, 'buffer_size': 100000, 'learning_rate': 0.0001, 'value_learning_rate': 0.001, 'batch_size': 128, 'gamma': 0.99, 'update_period': 4, 'use_baseline': False, 'wandb_sweep': False, 'sweep_id': None, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'rl-pa2'}
+Episode 100	Average Score: 175.40
+Episode 159	Average Score: 478.09
+Environment solved in 159 episodes!	Average Score: 478.09
