@@ -1,6 +1,6 @@
 # 🧠 Reinforcement Learning for Classic Control Environments
 
-This repository provides an implementation of reinforcement learning algorithms—**Dueling DQN** and **Monte Carlo REINFORCE**—to solve classic control environments such as **CartPole** and **Acrobot** using PyTorch.
+This repository provides an implementation of reinforcement learning algorithms—**Dueling DQN** and **Monte Carlo REINFORCE**—to solve classic control environments of **CartPole** and **Acrobot** using PyTorch. Apart from this the Dueling DQN has support for versions where the unidentifiability problem is solved using the mean and the max of the advantage function and the REINFORCE has support for both the vanilla version as well the version with baseline
 
 ## 🚀 Features
 
