@@ -10,6 +10,20 @@ This repository provides an implementation of reinforcement learning algorithms�
 - Target network updates
 - Customizable training hyperparameters
 
+## File description
+
+| 📄 **File Name**         | 📝 **Description** |
+|-------------------------|-------------------|
+| `main.py`               | 🚦 Main entry point. Handles argument parsing, configuration, environment setup, and launches training for the selected RL algorithm (Dueling DQN or Monte Carlo REINFORCE). Integrates with Weights & Biases for experiment tracking. |
+| `agent.py`              | 🤖 Implements the agent classes: `DuelingDQNAgent` and `MonteCarloREINFORCEAgent`. Handles action selection, learning updates, and (for DQN) experience replay. |
+| `algorithms.py`         | 🧩 Contains neural network architectures: `DuelingDQN`, `MonteCarloREINFORCE`, and `ValueNetwork`. These define the models used by the agents. |
+| `argument_parser.py`    | 🗝️ Defines and parses all command-line arguments for configuring the environment, algorithm, and hyperparameters. |
+| `configure.py`          | 🛠️ Provides the `Configure` class, which maps configuration scripts to the correct environment, agent, algorithm, policy, and training function. |
+| `policy.py`             | 🎲 Contains the `Policy` base class and the `EpsGreedy` policy for epsilon-greedy action selection in DQN. |
+| `replay_buffer.py`      | 🗃️ Implements the `ReplayBuffer` class for storing and sampling experience tuples, enabling experience replay in DQN. |
+| `shared.py`             | 🔗 Stores shared resources such as the device configuration (CPU/GPU) and the global configuration script. |
+| `trainer.py`            | 🏋️ Implements the `Trainer` class, which provides training loops for both Dueling DQN and Monte Carlo REINFORCE algorithms, including logging and early stopping. |
+
 ## 📦 Dependencies
 
 - Python 3.7+
@@ -18,9 +32,14 @@ This repository provides an implementation of reinforcement learning algorithms�
 - OpenAI Gym
 - argparse
 
+
 Install dependencies:
 
-
+## Reproducing the code 
+```bash
+git clone https://github.com/rudra-iitm-phd/rl_assignment2.git
+cd rl_assignment2
+```
 ### 🧾 Command Line Arguments
 
 
@@ -40,6 +59,14 @@ Install dependencies:
 
 ### 🧪 Example
 
+Train the agent to solve the acrobot environment using monte carlo reinforce with the baseline version
+
 ```bash
 python main.py -env acrobot -a mc_reinforce -lr 1e-3 -ub True
+```
+
+Train the agent to solve the cartpole environment using Dueling DQN using the max version for solving the unidentifiability problem
+
+```bash
+python main.py -env cartpole -a dueling_dqn -um True
 ```

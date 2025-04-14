@@ -62,7 +62,7 @@ class Trainer:
                 if shared.configuration_script['use_baseline']:
                     state_value = agent.get_value(state)
                     agent.values.append(state_value)
-                    state = next_state
+                state = next_state
                 episode_rewards.append(reward)
                 if done:
                     break

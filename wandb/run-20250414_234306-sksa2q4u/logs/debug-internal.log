@@ -1,0 +1,9 @@
+{"time":"2025-04-14T23:43:06.543386+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to RL DA6400/assignment2/wandb/run-20250414_234306-sksa2q4u/logs/debug-core.log"}
+{"time":"2025-04-14T23:43:06.68582+05:30","level":"INFO","msg":"created new stream","id":"sksa2q4u"}
+{"time":"2025-04-14T23:43:06.685937+05:30","level":"INFO","msg":"stream: started","id":"sksa2q4u"}
+{"time":"2025-04-14T23:43:06.685945+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sksa2q4u"}
+{"time":"2025-04-14T23:43:06.686029+05:30","level":"INFO","msg":"sender: started","stream_id":"sksa2q4u"}
+{"time":"2025-04-14T23:43:06.686081+05:30","level":"INFO","msg":"handler: started","stream_id":"sksa2q4u"}
+{"time":"2025-04-14T23:43:07.089806+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T23:43:17.408575+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T23:43:17.411154+05:30","level":"INFO","msg":"Stopped system monitor"}
